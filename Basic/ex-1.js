@@ -8,14 +8,19 @@ const moment = require('moment')
 
 moment.locale("fr");
 
-const today = moment().format('dddd')
-const time = moment().format('h:mm:ss a')
+const todayByMoment = moment().format('dddd')
+const timeByMoment = moment().format('h:mm:ss a')
 
 
 
-console.log("Today is :", today);
-console.log("Current time is : ", time);
+// console.log("Today is :", todayByMoment);
+// console.log("Current time is : ", timeByMoment);
 
 //Second Solution
 
 
+const today = new Date()
+const day = today.getDay()
+const daylist = ["Sunday", "Monday", "Tuesday", "Wednesday ", "Thursday", "Friday", "Saturday"]
+
+console.log(`Today is :${daylist[day]}`);
