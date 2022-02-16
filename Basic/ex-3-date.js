@@ -10,6 +10,8 @@ const dateMoment = moment().format('MM/DD/YYYY');
 
 // console.log("Today is", dateMoment);
 
+
+
 //Second Solution with Date Methods
 let today = new Date();
 let dd = today.getDate()
