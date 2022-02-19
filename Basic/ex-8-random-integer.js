@@ -6,6 +6,7 @@ var prompt = require("prompt");
 
 prompt.start();
 
+
 //First Solution with arrow function
 const min = 1
 const max = 10
